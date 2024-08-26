@@ -9,7 +9,7 @@ int main(void) {
     if (age >= 18) {
         printf("You are %d and you are eligible to vote\n", age);
     } else {
-        printf("You are %d and you are not eligible to vote", age);
+        printf("You are %d and you are not eligible to vote\n", age);
     }
 
     return 0;
