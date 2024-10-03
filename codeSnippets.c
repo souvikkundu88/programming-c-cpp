@@ -22,6 +22,7 @@
 /******************************************/
 
 // fibonacci series in c
+/*
 #include <stdio.h>
 
 int Fibonacci(int n) {
@@ -36,4 +37,6 @@ int main(void) {
     printf("Fibonacci(%d) = %d", n, Fn);
     return 0;
 }
+*/
+
 
