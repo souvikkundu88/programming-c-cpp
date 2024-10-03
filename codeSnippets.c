@@ -58,7 +58,7 @@ int main() {
 /*
 Write a program that asks the user for a positive integer and keeps asking until the user enters 0. After the user enters 0, the program should display the sum of all the positive integers entered.
 */
-
+/*
 #include <stdio.h>
 
 int main() {
@@ -73,4 +73,16 @@ int main() {
 
     printf("The sum of the entered numbers is: %d\n", sum);
     return 0;
+}
+*/
+
+/*Write a C program that asks the user for a number and prints whether it's positive, negative, or zero
+Use if else
+*/
+
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("enter a number:");
 }
