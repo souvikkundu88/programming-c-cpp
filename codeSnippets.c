@@ -42,7 +42,7 @@ int main(void) {
 /*
 Write a C program that prints all even numbers between 1 and 20 using a for loop.
 */
-
+/*
 #include <stdio.h>
 
 int main() {
@@ -51,5 +51,26 @@ int main() {
         printf("%d ", i);
     }
     printf("\n");
+    return 0;
+}
+*/
+
+/*
+Write a program that asks the user for a positive integer and keeps asking until the user enters 0. After the user enters 0, the program should display the sum of all the positive integers entered.
+*/
+
+#include <stdio.h>
+
+int main() {
+    int sum = 0;
+    int num;
+
+    while(num!=0) {
+        printf("Enter a positive integer (or 0 to quit):");
+        scanf("%d", &num);
+        sum = sum + num;
+    }
+
+    printf("The sum of the entered numbers is: %d\n", sum);
     return 0;
 }
