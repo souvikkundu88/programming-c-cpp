@@ -80,9 +80,26 @@ int main() {
 Use if else
 */
 
+// psuedocode
+// create the main function
+// declare int variable num to store input from user
+// ask user for input
+// use if else to check if the input is positive or negative or zero
+
 #include <stdio.h>
 
 int main() {
     int num;
     printf("enter a number:");
+    scanf("%d", &num);
+    if(num == 0) {
+        printf("Number %d is a zero", num);
+    }
+    else if (num > 0) {
+        printf("Number %d is a positive", num);
+    }
+    else {
+        printf("Number %d is a negative", num);
+    }
+    return 0;
 }
