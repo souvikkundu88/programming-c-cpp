@@ -141,3 +141,28 @@ Use if else
 //     return 0;
 // }
 
+// Break and Continue 
+//Write a C program that:
+// Declares an array of integers.
+// Uses a for loop to iterate through the array.
+// Prints all the numbers in the array that are divisible by 3.
+// If it encounters a number greater than 50, it stops processing the array.
+// This challenge combines both break and continue within the same loop.
+
+#include <stdio.h>
+int main() {
+    int numbers[] = {12, 4, 33, 67, 21, 55, 18, 9};
+
+    printf("Numbers divisible by 3 (but not greater than 50):\n");
+    for (int i = 0; i < 8; i++) {
+        // Your code here
+        if (numbers[i] > 50) {
+            break;
+        } else if(numbers[i] % 3 != 0) {
+            continue;
+        } else if(numbers[i] % 3 == 0) {
+            printf("%d\n", numbers[i]); 
+        }
+    }
+    return 0;
+}
