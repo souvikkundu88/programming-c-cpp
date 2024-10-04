@@ -129,14 +129,15 @@ Use if else
 
 // using ?:
 
-#include <stdio.h>
-int main() {
-    int num;
-    printf("enter a positive integer number: ");
-    scanf("%d", &num);
-    printf("printing all even and odd numbers\n");
-    for(int i=1; i<=num; i++) {
-        printf("%s number %d\n",(i % 2 == 0) ? "even" : "odd", i);
-    }
-    return 0;
-}
+// #include <stdio.h>
+// int main() {
+//     int num;
+//     printf("enter a positive integer number: ");
+//     scanf("%d", &num);
+//     printf("printing all even and odd numbers\n");
+//     for(int i=1; i<=num; i++) {
+//         printf("%s number %d\n",(i % 2 == 0) ? "even" : "odd", i);
+//     }
+//     return 0;
+// }
+
