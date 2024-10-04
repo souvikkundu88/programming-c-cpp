@@ -86,20 +86,27 @@ Use if else
 // ask user for input
 // use if else to check if the input is positive or negative or zero
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int num;
-    printf("enter a number:");
-    scanf("%d", &num);
-    if(num == 0) {
-        printf("Number %d is a zero\n", num);
-    }
-    else if (num > 0) {
-        printf("Number %d is a positive\n", num);
-    }
-    else {
-        printf("Number %d is a negative\n", num);
-    }
-    return 0;
-}
+// int main() {
+//     int num;
+//     printf("enter a number:");
+//     scanf("%d", &num);
+//     if(num == 0) {
+//         printf("Number %d is a zero\n", num);
+//     }
+//     else if (num > 0) {
+//         printf("Number %d is a positive\n", num);
+//     }
+//     else {
+//         printf("Number %d is a negative\n", num);
+//     }
+//     return 0;
+// }
+
+// Challenge: Write a C program that does the following:
+
+// Asks the user for a positive integer n.
+// Prints all the numbers from 1 to n.
+// For each number, it prints whether the number is "even" or "odd."
+
