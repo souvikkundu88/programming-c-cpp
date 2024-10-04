@@ -237,3 +237,55 @@ Use if else
 //   printf("\n"); // Output: 1 2 3 4 5
 //   return 0;
 // }
+
+// #include <stdio.h>
+// int main() {
+//     for (int i = 0; i < 10; i++) {
+//   if (i == 5) {
+//     break; 
+//   }
+//   printf("%d ", i);
+// }
+// }
+// Output: 0 1 2 3 4
+
+// #include<stdio.h>
+
+// int main() {
+//     for (int i = 0; i < 5; i++) {
+//   if (i == 2) {
+//     continue; 
+//   }
+//   printf("%d ", i);
+// }
+// // Output: 0 1 3 4
+// }
+
+// #include<stdio.h>
+
+// int main() {
+//     int day = 3;
+// switch (day) {
+//   case 1:
+//     printf("Monday\n");
+//     break;
+//   case 2:
+//     printf("Tuesday\n");
+//     break;
+//   case 3:
+//     printf("Wednesday\n");
+//     break;
+//   default:
+//     printf("Other day\n");
+// }
+// // Output: Wednesday
+// }
+
+#include<stdio.h>
+
+int main() {
+    int a = 10, b = 20;
+    int max = (a > b) ? a : b; // max will be 20
+    printf("%d", max);
+    return 0;
+}
