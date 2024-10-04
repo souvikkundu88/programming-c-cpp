@@ -1,4 +1,3 @@
-/******************************************/
 // input arguments
 // #include <stdio.h>
 // void writeMessage(char name[]) {
@@ -18,8 +17,6 @@
 //     writeMessage("SK", 36);
 //     return 0;
 // }
-
-/******************************************/
 
 // fibonacci series in c
 /*
@@ -149,20 +146,73 @@ Use if else
 // If it encounters a number greater than 50, it stops processing the array.
 // This challenge combines both break and continue within the same loop.
 
-#include <stdio.h>
-int main() {
-    int numbers[] = {12, 4, 33, 67, 21, 55, 18, 9};
+// #include <stdio.h>
+// int main() {
+//     int numbers[] = {12, 4, 33, 67, 21, 55, 18, 9};
 
-    printf("Numbers divisible by 3 (but not greater than 50):\n");
-    for (int i = 0; i < 8; i++) {
-        // Your code here
-        if (numbers[i] > 50) {
-            break;
-        } else if(numbers[i] % 3 != 0) {
-            continue;
-        } else if(numbers[i] % 3 == 0) {
-            printf("%d\n", numbers[i]); 
-        }
-    }
-    return 0;
-}
+//     printf("Numbers divisible by 3 (but not greater than 50):\n");
+//     for (int i = 0; i < 8; i++) {
+//         // Your code here
+//         if (numbers[i] > 50) {
+//             break;
+//         } else if(numbers[i] % 3 != 0) {
+//             continue;
+//         } else if(numbers[i] % 3 == 0) {
+//             printf("%d\n", numbers[i]); 
+//         }
+//     }
+//     return 0;
+// }
+
+// Write a C program that:
+
+// Asks the user to enter a number between 1 and 7.
+// Uses a switch statement to print the corresponding day of the week (1 = Monday, 2 = Tuesday, ..., 7 = Sunday).
+// If the user enters a number outside the range 1-7, it prints an error message.
+
+// #include <stdio.h>
+// int main() {
+//     int userInput;
+//     printf("enter a number between 1 and 7\n");
+//     scanf("%d", &userInput);
+
+//     switch(userInput) {
+//         case 1:
+//             printf("Monday");
+//             break;
+//         case 2:
+//             printf("Tuesday");
+//             break;
+//         case 3:
+//             printf("Wedneday");
+//             break;
+//         case 4:
+//             printf("Thursday");
+//             break;
+//         case 5:
+//             printf("Friday");
+//             break;
+//         case 6:
+//             printf("Saturday");
+//             break;
+//         case 7:
+//             printf("Sunday");
+//             break;
+//         default:
+//             printf("Error");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//   int i = 6; // Notice i is initialized to 6
+//   do {
+//     printf("%d ", i);
+//     i++;
+//   } while (i <= 5);
+//   printf("\n"); // Output: 6
+//   return 0;
+// }
+
