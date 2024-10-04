@@ -216,3 +216,24 @@ Use if else
 //   return 0;
 // }
 
+// #include <stdio.h>
+
+// int main() {
+//   int i = 1;
+//   while (i <= 5) {
+//     printf("%d ", i);
+//     i++;
+//   }
+//   printf("\n"); // Output: 1 2 3 4 5
+//   return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//   for (int i = 1; i <= 5; i++) {
+//     printf("%d ", i);
+//   }
+//   printf("\n"); // Output: 1 2 3 4 5
+//   return 0;
+// }
