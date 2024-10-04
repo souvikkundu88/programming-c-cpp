@@ -110,3 +110,33 @@ Use if else
 // Prints all the numbers from 1 to n.
 // For each number, it prints whether the number is "even" or "odd."
 
+// #include <stdio.h>
+
+// int main() {
+//     int num;
+//     printf("enter a positive integer number: ");
+//     scanf("%d", &num);
+//     printf("printing all even and odd numbers\n");
+//     for(int i=1; i<=num; i++) {
+//         if(i % 2 == 0) {
+//             printf("even number %d\n", i);
+//         } else if(i %2 != 0){
+//             printf("odd number %d\n", i);
+//         }
+//     }    
+//     return 0;
+// }
+
+// using ?:
+
+#include <stdio.h>
+int main() {
+    int num;
+    printf("enter a positive integer number: ");
+    scanf("%d", &num);
+    printf("printing all even and odd numbers\n");
+    for(int i=1; i<=num; i++) {
+        printf("%s number %d\n",(i % 2 == 0) ? "even" : "odd", i);
+    }
+    return 0;
+}
