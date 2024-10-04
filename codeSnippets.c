@@ -93,13 +93,13 @@ int main() {
     printf("enter a number:");
     scanf("%d", &num);
     if(num == 0) {
-        printf("Number %d is a zero", num);
+        printf("Number %d is a zero\n", num);
     }
     else if (num > 0) {
-        printf("Number %d is a positive", num);
+        printf("Number %d is a positive\n", num);
     }
     else {
-        printf("Number %d is a negative", num);
+        printf("Number %d is a negative\n", num);
     }
     return 0;
 }
