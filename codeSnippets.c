@@ -281,11 +281,67 @@ Use if else
 // // Output: Wednesday
 // }
 
-#include<stdio.h>
+// #include<stdio.h>
 
-int main() {
-    int a = 10, b = 20;
-    int max = (a > b) ? a : b; // max will be 20
-    printf("%d", max);
-    return 0;
-}
+// int main() {
+//     int a = 10, b = 20;
+//     int max = (a > b) ? a : b; // max will be 20
+//     printf("%d", max);
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//   int rows = 5; // You can change this to control the number of rows
+
+//   for (int i = 1; i <= rows; ++i) {
+//     // Print spaces
+//     for (int j = 1; j <= rows - i; ++j) {
+//       printf("  ");
+//     }
+
+//     // Print zeros
+//     for (int j = 1; j <= 2 * i - 1; ++j) {
+//       printf("0 ");
+//     }
+
+//     printf("\n");
+//   }
+
+//   return 0;
+// }
+
+// functions
+
+// Write a C function called is_even that takes an integer as an argument and returns 1 if the integer is even, and 0 if it is odd.
+
+// #include <stdio.h>
+
+// int is_even(int userInput) {
+//   if (userInput == 0) {
+//     printf("%d is a zero", userInput);
+//     return 1;
+//   } else if(userInput % 2 == 0 && userInput > 0) {
+//       printf("%d is even and a positive integer", userInput);
+//       return 0;
+//     } else if(userInput % 2 == 0 && userInput < 0) {
+//       printf("%d is even and a negative integer", userInput);
+//       return 0;
+//     } else if (userInput % 2 != 0 && userInput > 0) {
+//       printf("%d is odd and a positive integer", userInput);
+//       return 1;
+//     } else {
+//       printf("%d is odd and a negative integer", userInput);
+//       return 1;
+//     }
+// }
+
+// int main() {
+//   int num;
+//   printf("enter an integer\n");
+//   scanf("%d", &num);
+//   is_even(num);
+// }
+
+// optimizing the previous
