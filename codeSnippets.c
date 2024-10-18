@@ -346,33 +346,76 @@ Use if else
 
 // optimizing the previous
 
+// #include <stdio.h>
+
+// int is_even(int userInput) {
+//   if (userInput == 0) {
+//     printf("%d is zero\n", userInput);
+//     return 1; 
+//   }
+
+//   if (userInput % 2 == 0) { 
+//     printf("%d is even and ", userInput);
+//   } else {
+//     printf("%d is odd and ", userInput);
+//   }
+
+//   if (userInput > 0) {
+//     printf("a positive integer\n");
+//   } else {
+//     printf("a negative integer\n");
+//   }
+//   // Simplified even/odd check:
+//   return (userInput % 2 == 0); 
+// }
+
+// int main() {
+//   int num;
+//   printf("Enter an integer: ");
+//   scanf("%d", &num);
+//   is_even(num);
+//   return 0; // It's good practice to return 0 from main
+// }
+
 #include <stdio.h>
 
-int is_even(int userInput) {
-  if (userInput == 0) {
-    printf("%d is zero\n", userInput);
-    return 1; 
-  }
+void fibonacci(int n) {
+    // First two numbers of Fibonacci
+    long long first = 0, second = 1, next;
+    
+    printf("Fibonacci Series up to %d numbers:\n", n);
+    
+    // Print the first number if n is at least 1
+    if (n >= 1)
+        printf("%lld ", first);
+    
+    // Print the second number if n is at least 2
+    if (n >= 2)
+        printf("%lld ", second);
 
-  if (userInput % 2 == 0) { 
-    printf("%d is even and ", userInput);
-  } else {
-    printf("%d is odd and ", userInput);
-  }
-
-  if (userInput > 0) {
-    printf("a positive integer\n");
-  } else {
-    printf("a negative integer\n");
-  }
-  // Simplified even/odd check:
-  return (userInput % 2 == 0); 
+    // Generate the rest of the series
+    for(int i = 3; i <= n; i++) {
+        next = first + second;
+        printf("%lld ", next);
+        first = second;
+        second = next;
+    }
+    
+    printf("\n");
 }
 
 int main() {
-  int num;
-  printf("Enter an integer: ");
-  scanf("%d", &num);
-  is_even(num);
-  return 0; // It's good practice to return 0 from main
+    int numTerms;
+    
+    // Ask user for number of terms
+    printf("Enter the number of terms: ");
+    scanf("%d", &numTerms);
+    
+    // Ensure the number of terms is positive
+    if (numTerms <= 0) {
+        printf("Please enter a positive integer.\n");
+    } else {
+        fibonacci(numTerms);
+    }
+    return 0;
 }
