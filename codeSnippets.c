@@ -435,10 +435,23 @@ int Fibonacci(int n) {
 //     return 0;
 // }
 
+// int main(void) {
+//     int n = 10;
+//     printf("Fibonacci series up to %d terms: ", n);
+//     for (int i = 0; i < n; i++) {
+//         printf("%d ", Fibonacci(i));
+//     }
+//     printf("\n");
+//     return 0;
+// }
+
+// taking input from user
 int main(void) {
-    int n = 10;
-    printf("Fibonacci series up to %d terms: ", n);
-    for (int i = 0; i < n; i++) {
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    for(int i = 0; i < n; i++){
         printf("%d ", Fibonacci(i));
     }
     printf("\n");
