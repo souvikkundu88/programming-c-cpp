@@ -446,14 +446,14 @@ int Fibonacci(int n) {
 // }
 
 // taking input from user
-int main(void) {
-    int n;
-    printf("Enter a number: ");
-    scanf("%d", &n);
+// int main(void) {
+//     int n;
+//     printf("Enter a number: ");
+//     scanf("%d", &n);
 
-    for(int i = 0; i < n; i++){
-        printf("%d ", Fibonacci(i));
-    }
-    printf("\n");
-    return 0;
-}
+//     for(int i = 0; i < n; i++){
+//         printf("%d ", Fibonacci(i));
+//     }
+//     printf("\n");
+//     return 0;
+// }
