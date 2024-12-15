@@ -460,30 +460,50 @@ Use if else
 
 // recursion
 
-#include <stdarg.h>
+// #include <stdarg.h>
+// #include <stdio.h>
+
+// double mean(int count, ...)
+// {
+//   va_list ap;
+//   int i, sum;
+
+//   va_start(ap, count);         // Initializing the list of arguments
+
+//   sum = 0;
+//   for (i = 0; i < count; i++)
+//     sum += va_arg(ap, int);    // Retrieving the next argument from the argument list
+
+//   va_end(ap);                  // Cleaning up
+//   return 1.0 * sum / count;     // Multiply by 1.0 to convert to a floating-point number
+// }
+
+// int main(void)
+// {
+//   // The first argument represents the count of the remaining arguments
+//   printf ("%.2f\n", mean (3, 2, 3, 4));
+       
+//   // Called with seven arguments
+//   printf ("%.2f\n", mean(6, 10, 4, 4, 10, 9, 8));  
+//   return 0;
+// }
+
 #include <stdio.h>
 
-double mean(int count, ...)
-{
-  va_list ap;
-  int i, sum;
+int main() {
+    int n, t1 = 0, t2 = 1, nextTerm;
 
-  va_start(ap, count);         // Initializing the list of arguments
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
 
-  sum = 0;
-  for (i = 0; i < count; i++)
-    sum += va_arg(ap, int);    // Retrieving the next argument from the argument list
+    printf("Fibonacci Series: ");
 
-  va_end(ap);                  // Cleaning up
-  return 1.0 * sum / count;     // Multiply by 1.0 to convert to a floating-point number
-}
+    for (int i = 1; i <= n; ++i) {
+        printf("%d, ", t1);
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
 
-int main(void)
-{
-  // The first argument represents the count of the remaining arguments
-  printf ("%.2f\n", mean (3, 2, 3, 4));
-       
-  // Called with seven arguments
-  printf ("%.2f\n", mean(6, 10, 4, 4, 10, 9, 8));  
-  return 0;
+    return 0;
 }
