@@ -488,22 +488,38 @@ Use if else
 //   return 0;
 // }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int n, t1 = 0, t2 = 1, nextTerm;
+// int main() {
+//     int n, t1 = 0, t2 = 1, nextTerm;
 
-    printf("Enter the number of terms: ");
-    scanf("%d", &n);
+//     printf("Enter the number of terms: ");
+//     scanf("%d", &n);
 
-    printf("Fibonacci Series: ");
+//     printf("Fibonacci Series: ");
 
-    for (int i = 1; i <= n; ++i) {
-        printf("%d, ", t1);
-        nextTerm = t1 + t2;
-        t1 = t2;
-        t2 = nextTerm;
+//     for (int i = 1; i <= n; ++i) {
+//         printf("%d, ", t1);
+//         nextTerm = t1 + t2;
+//         t1 = t2;
+//         t2 = nextTerm;
+//     }
+
+//     return 0;
+// }
+
+int fib(int n) {
+    int i;
+    if ((n == 0) || (n == 1))
+        return n;
+    int a = 0;
+    int b = 1;
+    int tmp;
+    for (i = 2; i <= n; i++) {
+        tmp = b;
+        b = a + b; // Now b contains the i^th Fibonacci number
+        a = tmp;
     }
-
-    return 0;
+    return b;
 }
+
