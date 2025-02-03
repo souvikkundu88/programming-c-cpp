@@ -543,3 +543,15 @@ Use if else
 //     return b;
 // }
 
+// int isPrime(int n) {
+//     // if n is less than equal to 0 or less than equal to 3
+//     if(n <= 0) return 0; // less than or equal to 0 is not a prime number
+//     if(n <= 3) return 3; // because 1 to 3 are prime numbers
+
+//     int i;
+
+//     for(i = 2; (i * i) <= n; i++) {
+//         if ( n % i == 0) return 0;
+//     }
+//     return 1;
+// }
