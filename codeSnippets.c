@@ -527,18 +527,19 @@ Use if else
 // create condition for 0 and 1 if the user input that
 // set temporary variable, use for loop for finding the fibonacci
 
-int fib (int userNum) {
+// int fib (int userNum) {
 
-    // create if conditon for userNum, if it's 0 or 1 then it should return the value immediately
-    if ((userNum == 0) || (userNum == 1))
-        return userNum;
+//     // create if conditon for userNum, if it's 0 or 1 then it should return the value immediately
+//     if ((userNum == 0) || (userNum == 1))
+//         return userNum;
     
-    int a = 0, b = 1, tmp, i; // create variables a, b
+//     int a = 0, b = 1, tmp, i; // create variables a, b
 
-    for (i = 2; i <= userNum; i++) {
-        tmp = b;
-        b = a + b;
-        a = tmp;
-    }
-    return b;
-}
+//     for (i = 2; i <= userNum; i++) {
+//         tmp = b;
+//         b = a + b;
+//         a = tmp;
+//     }
+//     return b;
+// }
+
