@@ -508,18 +508,37 @@ Use if else
 //     return 0;
 // }
 
-int fib(int n) {
-    int i;
-    if ((n == 0) || (n == 1))
-        return n;
-    int a = 0;
-    int b = 1;
-    int tmp;
-    for (i = 2; i <= n; i++) {
+// int fib(int n) {
+//     int i;
+//     if ((n == 0) || (n == 1))
+//         return n;
+//     int a = 0;
+//     int b = 1;
+//     int tmp;
+//     for (i = 2; i <= n; i++) {
+//         tmp = b;
+//         b = a + b; // Now b contains the i^th Fibonacci number
+//         a = tmp;
+//     }
+//     return b;
+// }
+
+// create fib function
+// create condition for 0 and 1 if the user input that
+// set temporary variable, use for loop for finding the fibonacci
+
+int fib (int userNum) {
+
+    // create if conditon for userNum, if it's 0 or 1 then it should return the value immediately
+    if ((userNum == 0) || (userNum == 1))
+        return userNum;
+    
+    int a = 0, b = 1, tmp, i; // create variables a, b
+
+    for (i = 2; i <= userNum; i++) {
         tmp = b;
-        b = a + b; // Now b contains the i^th Fibonacci number
+        b = a + b;
         a = tmp;
     }
     return b;
 }
-
