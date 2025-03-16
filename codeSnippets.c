@@ -615,20 +615,50 @@ Use if else
     
 // }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-float calculate_average(int arr[], int size) {
-    int sum = 0;
-    for (int i = 0; i < size; i++) {
-        sum += arr[i];
-    }
-    return (float)sum / size;
-}
+// float calculate_average(int arr[], int size) {
+//     int sum = 0;
+//     for (int i = 0; i < size; i++) {
+//         sum += arr[i];
+//     }
+//     return (float)sum / size;
+// }
+
+// int main() {
+//     int numbers[] = {10, 20, 30, 40, 50};
+//     int size = sizeof(numbers) / sizeof(numbers[0]);
+//     float average = calculate_average(numbers, size);
+//     printf("Average: %.2f\n", average);
+//     return 0;
+// }
+
+/*
+Great, let's work on a string-related practice problem.
+
+**Practice Problem 5:**
+
+Write a C program that:
+
+1.  Declares a character array (string) named `input_string` with a size of 100.
+2.  Prompts the user to enter a string using `printf`.
+3.  Reads the input string from the user using `scanf`.
+4.  Calculates and prints the length of the input string using `strlen`.
+
+**Hints:**
+
+* Remember to include the `string.h` header file for `strlen`.
+* Use the `%s` format specifier in `scanf` to read a string.
+* Be mindful of buffer overflows with `scanf`. For this exercise, assume the user will enter a string shorter than 100 characters. In later exercises, we can discuss how to prevent buffer overflows.
+*/
+
+#include <stdio.h>
+#include <string.h>
 
 int main() {
-    int numbers[] = {10, 20, 30, 40, 50};
-    int size = sizeof(numbers) / sizeof(numbers[0]);
-    float average = calculate_average(numbers, size);
-    printf("Average: %.2f\n", average);
+    char input_string[100];
+    printf("Enter a string: ");
+    scanf("%s", input_string);
+    printf(input_string);
     return 0;
 }
