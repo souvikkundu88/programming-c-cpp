@@ -556,11 +556,21 @@ Use if else
 //     return 1;
 // }
 
+// #include <stdio.h>
+
+// int main() {
+//     printf("Hello, World!\n");
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main() {
-    printf("Hello, World!\n");
+    int number = 7;
+    if (number % 2 == 0) {
+        printf ("Number is even");
+    } else {
+        printf ("Number is odd");
+    }
     return 0;
 }
-
-
