@@ -556,3 +556,11 @@ Use if else
 //     return 1;
 // }
 
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+
+
