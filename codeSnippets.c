@@ -563,14 +563,36 @@ Use if else
 //     return 0;
 // }
 
+// #include <stdio.h>
+
+// int main() {
+//     int number = 7;
+//     if (number % 2 == 0) {
+//         printf ("Number is even");
+//     } else {
+//         printf ("Number is odd");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     for (int i = 1; i <= 10; i++) {
+//         printf("%d\n", i);
+//     }
+//     return 0;
+// }
+
 #include <stdio.h>
 
 int main() {
-    int number = 7;
-    if (number % 2 == 0) {
-        printf ("Number is even");
-    } else {
-        printf ("Number is odd");
+    for (int i = 1; i <= 20; i++) {
+        if(i%3 == 0) {
+            printf("%d is divisible by 3\n", i);
+        } else {
+            printf("%d is not divisible by 3\n", i);
+        }
     }
     return 0;
 }
