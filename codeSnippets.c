@@ -584,15 +584,51 @@ Use if else
 //     return 0;
 // }
 
+// #include <stdio.h>
+
+// int main() {
+//     for (int i = 1; i <= 20; i++) {
+//         if(i%3 == 0) {
+//             printf("%d is divisible by 3\n", i);
+//         } else {
+//             printf("%d is not divisible by 3\n", i);
+//         }
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// float calculate_average (int arr[], int size) {
+//     // formula: Average = (Sum of all numbers) / (Number of numbers)
+//     int sum = 0;
+//     for (int i = 0; i < size; i++) {
+//         sum = sum + arr[i];
+//     }
+//     float average = sum / size;
+//      return (float)average;
+
+// }
+
+// int main(void) {
+//     int arr_numbers[] = {10, 20, 30, 40, 50};
+    
+// }
+
 #include <stdio.h>
 
-int main() {
-    for (int i = 1; i <= 20; i++) {
-        if(i%3 == 0) {
-            printf("%d is divisible by 3\n", i);
-        } else {
-            printf("%d is not divisible by 3\n", i);
-        }
+float calculate_average(int arr[], int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        sum += arr[i];
     }
+    return (float)sum / size;
+}
+
+int main() {
+    int numbers[] = {10, 20, 30, 40, 50};
+    int size = sizeof(numbers) / sizeof(numbers[0]);
+    float average = calculate_average(numbers, size);
+    printf("Average: %.2f\n", average);
     return 0;
 }
