@@ -652,13 +652,75 @@ Write a C program that:
 * Be mindful of buffer overflows with `scanf`. For this exercise, assume the user will enter a string shorter than 100 characters. In later exercises, we can discuss how to prevent buffer overflows.
 */
 
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int main() {
-    char input_string[100];
-    printf("Enter a string: ");
-    scanf("%s", input_string);
-    printf(input_string);
-    return 0;
+// int main() {
+//     char input_string[100];
+//     printf("Enter a string: ");
+//     scanf("%99s", input_string);
+//     int length = strlen(input_string);
+//     printf("length: %d\n", length);
+//     return 0;
+// }
+
+/*
+expected output
+
+[
+ 1.200  2.300 
+ 3.400  4.500 
+ 5.600  6.700 
+]
+
+[
+ 5.500  6.600  7.700 
+ 1.200  2.100  3.300 
+]
+
+*/
+
+void printMatrix(Matrix M)
+{
+  // Your code goes here...
+  int i, j;
+  printf("[\n");
+  for (i = 0; i < M.nrows; i++) {
+    for (j = 0; j < M.ncols; j++) {
+      printf("%6.3f ", M.data[i * M.ncols + j]);
+    }
+    printf("\n");
+  }
+  printf("]\n\n");
 }
+
+int main(void){
+  Matrix A = { {1.2, 2.3,
+                3.4, 4.5,
+                5.6, 6.7},
+               3,
+               2};
+	Matrix B = { {5.5, 6.6, 7.7,
+                1.2, 2.1, 3.3},
+               2,
+               3}; 
+  
+  printMatrix(A);
+  printMatrix(B);
+  
+  return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
