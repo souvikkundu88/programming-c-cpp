@@ -713,14 +713,37 @@ int main(void){
 
 */
 
+/* 
+#include <stdio.h>
+
+int main(void) {
+  printf("Hello world");
+  return 0;
+}
+*/
 
 
+// #include <stdio.h>
 
+// int main(void) {
+//   int a = 2;
+//   double b = 3.5;
+//   double c = a * b;
+//   double d = a / b;
+//   int e = a * b;
+//   int f = a / b;
+//   printf("a = %d, b = %.2f, c = %.2f, d = %.2f, e = %d, f = %d\n", a, b, c, d, e, f);
 
+//   return 0;
+// }
 
+#include<stdio.h>
+#include<stdio.h>
 
-
-
-
-
-
+int main(void) {
+  char intString[] = "1234";
+  char floatString[] = "328.4";
+  int myInt = atoi(intString);
+  double myDouble = atof(floatString);
+  printf("intString = %s")
+}
