@@ -762,4 +762,53 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 */
+/*
+#include <stdio.h> 
+
+int globalVar = 10;  // Global variable
+
+int main(void) {
+    printf("%d", globalVar); // ✅ Works fine
+    return 0;
+}
+*/
+
+/*
+#include <stdio.h>
+
+int globlvr = 10;  // Global variable
+
+void testfunc(void) {
+    printf("Global Variable - Inside testfunc: globlvr = %d\n", globlvr);
+    // printf("Printing local variable loclvar = %d\n", loclvr); // identifier "loclvr" is undefined
+    // No return value for void
+}
+
+int main(void) {
+    int loclvr = 5;  // Local variable
+    printf("Inside main: loclvr = %d\n", loclvr); // prints the local variable loclvr
+
+    testfunc();  // Call the function to print globlvr
+    return 0;
+}
+*/
+
+
+#include <stdio.h>
+
+int globlvr = 10;
+
+void testfunc(int loclvr) {
+    printf("Inside testfunc: globlvr = %d\n", globlvr);
+    printf("Printing local variable loclvr = %d\n", loclvr);
+}
+
+int main(void) {
+    int loclvr = 5;
+    printf("Inside main: loclvr = %d\n", loclvr);
+    testfunc(loclvr);  // pass value
+    return 0;
+}
+
+
 
