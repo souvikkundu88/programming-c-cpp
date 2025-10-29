@@ -793,7 +793,7 @@ int main(void) {
 }
 */
 
-
+/*
 #include <stdio.h>
 
 int globlvr = 10;
@@ -807,6 +807,26 @@ int main(void) {
     int loclvr = 5;
     printf("Inside main: loclvr = %d\n", loclvr);
     testfunc(loclvr);  // pass value
+    return 0;
+}
+*/
+
+#include <stdio.h>
+
+int globalVar = 10;
+
+int main(void) {
+    int localVar = 5;
+
+    printf("Inside main: globalVar = %d, localVar = %d\n", globalVar, localVar);
+
+    if (1) {
+        int blockVar = 20; // Exists only inside this if-block
+        printf("Inside if block: blockVar = %d\n", blockVar);
+    }
+
+    //printf("%d", blockVar); // ❌ Error: identifier blockVar is undefined
+
     return 0;
 }
 
