@@ -810,7 +810,7 @@ int main(void) {
     return 0;
 }
 */
-
+/*
 #include <stdio.h>
 
 int globalVar = 10;
@@ -829,6 +829,8 @@ int main(void) {
 
     return 0;
 }
+*/
+
 
 
 
