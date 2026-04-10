@@ -872,6 +872,7 @@ int main(void) {
 }
 */
 
+/*
 #include <stdio.h>
 
 void writeMessage(char name[], int age) {
@@ -883,3 +884,6 @@ int main(void) {
     writeMessage("Kundu", 41);
     return 0;
 }
+*/
+
+
