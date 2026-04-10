@@ -830,7 +830,43 @@ int main(void) {
     return 0;
 }
 */
+/*
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(void) {
+    char intString[] = "1234";
+    char floatString[] = "328.4";
+    int myInt = atoi(intString);
+    double myDouble = atof(floatString);
+    printf("intString = %s, floatString = %s,\n", intString, floatString);
+    printf("myInt = %d, myDouble = %.1f\n\n", myInt, myDouble);
 
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
 
+int main() {
+    int i;
+    for(i=1; i<=10; i++) {
+        if ((i%2) != 0) {
+            printf("%d is odd\n", i);
+        }
+    }
+}
+*/
+
+#include <stdio.h>
+
+void writeMessage(char name[]) {
+    printf("Hello, %s\n", name);
+}
+
+int main(void) {
+    writeMessage("Souvik");
+    writeMessage("Kundu");
+    return 0;
+}
 
