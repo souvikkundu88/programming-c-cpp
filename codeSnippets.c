@@ -874,12 +874,12 @@ int main(void) {
 
 #include <stdio.h>
 
-void writeMessage(char name[], int n) {
-    print("Hello, %s %d\n", name, n);
+void writeMessage(char name[], int age) {
+    printf("Hello, %s!, and your age is %d\n", name, age);
 }
 
 int main(void) {
-    writeMessage("Souvik", 38);
-    writeMessage("Kundu", 39);
+    writeMessage("Souvik", 40);
+    writeMessage("Kundu", 41);
     return 0;
 }
