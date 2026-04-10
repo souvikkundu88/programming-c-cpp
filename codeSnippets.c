@@ -858,6 +858,7 @@ int main() {
 }
 */
 
+/*
 #include <stdio.h>
 
 void writeMessage(char name[]) {
@@ -869,4 +870,16 @@ int main(void) {
     writeMessage("Kundu");
     return 0;
 }
+*/
 
+#include <stdio.h>
+
+void writeMessage(char name[], int n) {
+    print("Hello, %s %d\n", name, n);
+}
+
+int main(void) {
+    writeMessage("Souvik", 38);
+    writeMessage("Kundu", 39);
+    return 0;
+}
