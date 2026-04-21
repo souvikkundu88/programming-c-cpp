@@ -885,5 +885,26 @@ int main(void) {
     return 0;
 }
 */
+/*
+#include <stdio.h> // needed for printf
 
+int main() {
+    int a = 0; // 1st fibonacci number
+    int b = 1; // 2nd fibonacci number
+    int next; // store the next number
+    int i; // loop counter
+
+    // print the first two numbers
+    printf("%d %d ", a, b);
+
+    // loop to generate next 5 numbers
+    for (i = 0; i < 5; i++) {
+        next = a + b; // add last two numbers
+        printf("%d ", next); //print the next number
+        a = b; //move forward - a becomes old b
+        b = next; // b becomes the new numbers
+    }
+    return 0;
+}
+*/
 
